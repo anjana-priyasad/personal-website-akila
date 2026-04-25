@@ -332,23 +332,29 @@ Max - Width Query
 	}
 
 	.cv_banner_img {
-		max-height: 310px;
-		overflow: hidden;
+		overflow: visible;
+		position: relative;
 	}
 
 	.cv_banner_img .bnr-boy {
-		max-height: 310px;
+		max-height: 340px;
 		width: auto;
 		margin: 0 auto;
+		position: relative;
+		z-index: 2;
+		-webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 98%);
+		mask-image: linear-gradient(to bottom, black 80%, transparent 98%);
 	}
 
 	.cv_banner_img::before {
-		max-width: 80%;
-		max-height: 280px;
+		max-width: 82%;
+		max-height: 260px;
+		height: 260px;
 		border-radius: 34px;
-		top: 20px;
+		top: 60px;
 		left: 50%;
 		transform: translateX(-50%);
+		z-index: 1;
 	}
 
 	.cv_banner_text h5 {
