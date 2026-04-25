@@ -778,7 +778,10 @@ section{
 
 /* --- Dots --- */
 .bnr-float-dot {
-    display: none !important;
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: float_dot 4s ease-in-out infinite alternate;
 }
 
 /*
@@ -826,7 +829,11 @@ section{
 
 /* --- Rings / Circles --- */
 .bnr-float-circle {
-    display: none !important;
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    border: 2px solid transparent;
+    animation: float_ring 5s ease-in-out infinite alternate;
 }
 
 /*
@@ -858,7 +865,6 @@ section{
    Responsive: social sidebar + decoratives
    ------------------------------------------------------- */
 @media (max-width: 991px) {
-    .bnr-float-star, .bnr-float-dot, .bnr-float-circle { display: none; }
     .bnr-yellow-circle, .bnr-yellow-dots { display: none; }
 }
 
