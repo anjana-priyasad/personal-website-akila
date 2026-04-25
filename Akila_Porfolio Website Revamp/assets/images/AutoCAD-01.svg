@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.9.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 65 65" style="enable-background:new 0 0 65 65;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);fill-opacity:0.3;}
+	.st1{fill:none;stroke:url(#SVGID_00000145764510775249398490000006684072269912666506_);}
+</style>
+<g id="Ellipse_7">
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="32.5" y1="776.0001" x2="32.5" y2="844.2918" gradientTransform="matrix(1 0 0 1 0 -776)">
+		<stop  offset="0" style="stop-color:#00998F"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:9.000000e-02"/>
+	</linearGradient>
+	<circle class="st0" cx="32.5" cy="32.5" r="32.5"/>
+	
+		<linearGradient id="SVGID_00000023265807506654787460000000319012289427023526_" gradientUnits="userSpaceOnUse" x1="32.5" y1="776.0001" x2="32.5" y2="844.2918" gradientTransform="matrix(1 0 0 1 0 -776)">
+		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0.25"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+	</linearGradient>
+	<circle style="fill:none;stroke:url(#SVGID_00000023265807506654787460000000319012289427023526_);" cx="32.5" cy="32.5" r="32"/>
+</g>
+<image style="overflow:visible;enable-background:new    ;" width="390" height="414" xlink:href="unnamed.png"  transform="matrix(8.552886e-02 0 0 8.552886e-02 15.8218 14.7955)">
+</image>
+</svg>

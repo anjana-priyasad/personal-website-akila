@@ -1,0 +1,658 @@
+/*============================
+Min - Height Query
+============================*/
+/*@media(min-height:320px) and (max-height:650px) {
+   .cv_menus_wrapper .cv_menus li a{
+
+   }
+}
+*/
+
+/*============================
+Min - Width Query
+============================*/
+
+@media (min-width:1500px) {
+	.cv_container {
+		max-width: 1504px;
+		width: 100%;
+		padding-right: var(--bs-gutter-x, .75rem);
+		padding-left: var(--bs-gutter-x, .75rem);
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+
+
+/*============================
+Max - Width Query
+============================*/
+
+@media (max-width: 1700px) {
+
+	.cv_about_content {
+		max-width: 1055px;
+
+	}
+
+	.cv_about_info {
+		max-width: 560px;
+	}
+
+	.cv_about_box {
+		padding: 20px 25px 20px 75px;
+	}
+
+	.cv_edu_box {
+		max-width: 454px;
+	}
+
+	.cv_gallery_img {
+		height: auto;
+	}
+
+}
+
+@media (max-width:1499.98px) {
+
+	.cv_banner_img .bnr-line {
+		right: -148px;
+		top: -135px;
+	}
+
+	.cv_banner_img .bnr-star {
+		left: 198px;
+	}
+
+	.cv_banner_img .bnr-sqr {
+		left: 365px;
+	}
+}
+
+@media (max-width:1399.98px) {
+
+	.cv_edu_box {
+		max-width: 385px;
+		padding: 20px;
+	}
+
+	.cv_gallery_wrapper {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.cv_gallery_item.item-2 .cv_gallery_small {
+		flex-direction: column;
+	}
+}
+
+@media (max-width:1199.98px) {
+
+	.cv_menus_wrapper .cv_menus li a {
+		font-size: 45px;
+	}
+
+	.cv_banner_wrapper {
+		padding: 100px 0 60px;
+		align-items: flex-start;
+	}
+	.cv_about_wrapper {
+		padding: 100px 0;
+	}
+
+	.cv_banner_img::before {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.cv_banner_img .bnr-line {
+		right: 95px;
+	}
+
+	.cv_banner_wrapper::before {
+		background-position: bottom;
+		background-size: contain;
+	}
+
+	.cv_banner_text {
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	.cv_banner_text a {
+		margin: 15px auto 25px;
+	}
+
+	.cv_banner_box {
+		max-width: 705px;
+		margin: auto;
+		text-align: center;
+	}
+
+	.cv_header_menu {
+		padding: 70px 40px 70px 90px;
+	}
+
+	.cv_about_content {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.cv_about_info {
+		max-width: 100%;
+		margin-top: 30px;
+		text-align: center;
+	}
+
+	.cv_about_info .cv_about_btn {
+		padding: unset;
+		justify-content: center;
+	}
+
+	.cv_about_info h2 {
+		margin-left: 83px;
+	}
+
+	.cv_about_box {
+		padding: 20px 25px;
+		border-radius: 10px;
+	}
+
+	.cv_edu_heading,
+	.cv_do_heading,
+	.cv_client_heading {
+		text-align: center;
+	}
+
+	.cv_edu_heading h2,
+	.cv_do_heading h2,
+	.cv_client_heading h2 {
+		margin-left: auto;
+	}
+
+	.cv_edu_heading p,
+	.cv_client_heading p {
+		margin: 30px auto 0;
+	}
+
+	.cv_edu_box {
+		max-width: 50%;
+	}
+
+	.cv_exp_info {
+		justify-content: center;
+	}
+
+	.cv_do_heading p {
+		margin: 30px auto 20px;
+	}
+
+	.cv_do_img {
+		text-align: center;
+	}
+
+	.cv_do_box {
+		padding: 30px 20px;
+	}
+
+	.cv_map_info {
+		justify-content: flex-start;
+	}
+
+	.cv_address_box {
+		flex-direction: column;
+		text-align: center;
+	}
+
+}
+
+@media (max-width:991.98px) {
+
+	.cv_banner_img .bnr-line {
+		display: none;
+	}
+
+	.cv_client_img {
+		padding: 35px;
+	}
+}
+
+@media (max-width:767.98px) {
+
+	section {
+		padding: 50px 0;
+	}
+
+	.cv_banner_wrapper {
+		padding: 75px 0 80px;
+		align-items: center;
+		justify-content: center;
+		min-height: 100dvh;
+	}
+
+	.cv_about_wrapper,
+	.cv_portfolio_wrapper,
+	.cv_do_wrapper,
+	.cv_map_wrapper {
+		padding: 100px 0 50px;
+	}
+
+	.cv_education_wrapper {
+		padding-bottom: 50px;
+	}
+
+	.cv_menus_wrapper .cv_menus li {
+		margin-bottom: auto;
+	}
+
+	.cv_menus_wrapper .cv_menus li a {
+		font-size: 36px;
+	}
+
+	.cv_menus_wrapper .cv_menus li a::before {
+		display: none;
+	}
+
+	.cv_header_menu {
+		padding: 70px 35px;
+	}
+
+	.cv_header_social ul {
+		gap: 10px;
+	}
+
+	.cv_about_img .cv_about_exp,
+	.cv_about_img .cv_about_rating {
+		position: relative;
+		top: unset;
+		left: unset;
+		right: unset;
+		bottom: unset;
+	}
+
+	.cv_about_experience {
+		display: flex;
+		gap: 20px;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 30px;
+	}
+
+	.cv_about_info .cv_about_btn {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.cv_port_tab {
+		flex-wrap: wrap;
+		padding: 10px;
+		justify-content: center;
+	}
+
+	.cv_gallery_small {
+		justify-content: center;
+	}
+
+	.cv_gallery_item.item-2 {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.cv_gallery_img.img-4 {
+		min-width: fit-content;
+	}
+
+	.cv_gallery_img.img-1 img,
+	.cv_gallery_img.img-2 img,
+	.cv_gallery_img.img-5 img {
+		min-height: auto;
+	}
+
+	.cv_client_info::after,
+	.cv_client_info::before,
+	.cv_client_box:first-child::after {
+		display: none;
+	}
+
+	.cv_map_content iframe {
+		height: 340px;
+	}
+
+	.cv_contact_form textarea {
+		margin-top: 6px;
+	}
+}
+
+@media (max-width:575.98px) {
+
+	.cv_banner_img .bnr-sqr,
+	.cv_banner_img .bnr-star {
+		display: none;
+	}
+
+	.cv_banner_img {
+		max-height: 310px;
+		overflow: hidden;
+	}
+
+	.cv_banner_img .bnr-boy {
+		max-height: 310px;
+		width: auto;
+		margin: 0 auto;
+	}
+
+	.cv_banner_img::before {
+		max-width: 80%;
+		max-height: 280px;
+		border-radius: 34px;
+		top: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.cv_banner_text h5 {
+		margin-bottom: 10px;
+		padding: 6px 18px;
+	}
+
+	.cv_banner_text h1 {
+		font-size: 38px;
+		min-height: 42px;
+		line-height: 1.15;
+	}
+
+	h2 {
+		font-size: 28px;
+	}
+
+	h3 {
+		font-size: 22px;
+	}
+
+	h4 {
+		font-size: 20px;
+	}
+
+	h5 {
+		font-size: 18px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+	.cv_banner_box {
+		padding: 30px 20px;
+	}
+
+	.cv_header_menu {
+		padding: 35px;
+	}
+
+	.cv_menus_wrapper {
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+
+	.cv_menus_wrapper .cv_menus li a {
+		font-size: 30px;
+	}
+
+	.cv_menus_wrapper .cv_menus li a::before {
+		width: 25px;
+		height: 2px;
+		left: -32px;
+	}
+
+	.cv_header_social::before {
+		display: none;
+	}
+
+	.cv_header_social ul {
+		gap: 10px;
+		margin-top: 20px;
+	}
+
+	.cv_header_social ul li a img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.cv_edu_heading {
+		text-align: left;
+	}
+
+	.cv_edu_info::before,
+	.cv_edu_info::after {
+		display: none;
+	}
+
+	.cv_edu_box {
+		max-width: 100%;
+	}
+
+	.cv_exp_box {
+		padding: 20px;
+	}
+
+	.cv_award_text h1 {
+		font-size: 36px;
+	}
+
+	.cv_skill_text h4 {
+		font-size: 16px;
+	}
+
+	.cv_skill_text p {
+		font-size: 14px;
+	}
+}
+
+@media (max-width:349.98px) {
+
+	.cv_header_menu {
+		padding: 0 15px;
+	}
+}
+
+/*============================
+  Mobile Bug Fixes (Samsung Galaxy / Real Device)
+============================*/
+
+/* Fix: Portfolio filter tabs — clean wrapped grid style on mobile */
+@media (max-width: 767.98px) {
+
+	.cv_port_tab {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: 100%;
+		padding: 14px 16px;
+		gap: 10px;
+		border-radius: 16px;
+		border: 1px solid rgb(255 255 255 / 10%);
+		margin: 0 auto 35px;
+	}
+
+	.cv_port_tab li {
+		flex-shrink: 0;
+	}
+
+	.cv_port_tab li a {
+		white-space: nowrap;
+		padding: 8px 22px;
+		min-width: unset;
+		min-height: 38px;
+		border-radius: 30px;
+		font-size: 15px;
+	}
+
+	/* Fix: Education/Certificate card year number breaking out of position */
+	.cv_edu_title {
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+		gap: 0 10px;
+	}
+
+	.cv_edu_title h1 {
+		font-size: 28px;
+		white-space: nowrap;
+		flex-shrink: 0;
+	}
+
+	.cv_edu_title h3 {
+		font-size: 18px;
+		word-break: break-word;
+	}
+
+	.cv_edu_box {
+		width: 100%;
+		max-width: 100%;
+		padding: 15px 15px 30px;
+	}
+
+	/* Fix: Skill card percentage text splitting onto two lines */
+	.cv_skill_text {
+		align-items: center;
+		flex-wrap: nowrap;
+		gap: 10px;
+	}
+
+	.cv_skill_text h4 {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		flex: 1;
+	}
+
+	.cv_skill_text p {
+		white-space: nowrap;
+		flex-shrink: 0;
+		font-size: 14px;
+		padding: 0 12px;
+	}
+
+	/* Fix: Project cards — 1 per row on mobile, matching card style */
+	.cv_project_content {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		align-items: center;
+	}
+
+	.cv_project_box {
+		width: 100%;
+		max-width: 340px;
+		min-width: 0;
+	}
+
+	.cv_project_img img {
+		height: 170px;
+		max-height: 170px;
+	}
+
+	.cv_project_heading {
+		font-size: 12px;
+	}
+
+	.cv_project_title p {
+		font-size: 14px;
+	}
+}
+
+/* ===== Project Card — Exact Style Match ===== */
+
+/* Applied globally (desktop + mobile) */
+.cv_project_box {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.02) 100%);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 16px;
+	overflow: hidden;
+	cursor: pointer;
+	transition: all 0.3s;
+	padding: 0;
+}
+
+.cv_project_box:hover {
+	border-color: rgba(255, 255, 255, 0.18);
+	transform: translateY(-3px);
+}
+
+.cv_project_img {
+	margin-bottom: 0 !important;
+	border-radius: 0 !important;
+	overflow: hidden;
+	width: 100%;
+	padding: 10px 10px 0 10px;
+}
+
+.cv_project_img img {
+	width: 100%;
+	object-fit: cover;
+	border-radius: 10px 10px 0 0 !important;
+	display: block;
+}
+
+.cv_project_text {
+	border-radius: 0 !important;
+	background: transparent !important;
+	border: none !important;
+	padding: 12px 14px 14px !important;
+}
+
+/* Flat card style for desktop */
+@media (min-width: 768px) {
+	.cv_project_box {
+		max-width: 399px;
+		width: 399px;
+	}
+
+	.cv_project_img img {
+		height: 209px;
+		max-height: 209px;
+	}
+
+	.cv_project_content {
+		gap: 24px;
+		justify-content: center;
+	}
+}
+
+/* Project card heading span (time display) */
+.cv_project_heading span {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	color: rgba(255, 255, 255, 0.55);
+	font-size: 14px;
+	white-space: nowrap;
+}
+
+.cv_project_heading p {
+	color: var(--cv-primary-color);
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.cv_project_title p {
+	font-size: 17px;
+	font-weight: 600;
+	margin-top: 5px;
+	color: #fff;
+	line-height: 1.3;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+.cv_project_title p {
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 6px;
+	color: #fff;
+}
