@@ -36,6 +36,7 @@ body {
     font-weight: 300;
     color: var(--cv-white-color);
     position: relative;
+    background-color: #0F192F;
 }
 
 *::-webkit-scrollbar-track
@@ -476,32 +477,13 @@ section{
 
 .cv_banner_wrapper {
     background-color: #0F192F;
-    background-image:
-        /* Dashed grid overlay — subtle blueprint texture */
-        repeating-linear-gradient(
-            0deg,
-            transparent,
-            transparent 38px,
-            rgba(255,255,255,0.035) 38px,
-            rgba(255,255,255,0.035) 40px
-        ),
-        repeating-linear-gradient(
-            90deg,
-            transparent,
-            transparent 38px,
-            rgba(255,255,255,0.035) 38px,
-            rgba(255,255,255,0.035) 40px
-        );
-    background-repeat: repeat;
-    background-size: 40px 40px;
     width: 100%;
-    min-height: 100vh;
     position: relative;
     padding-top: 100px;
-    padding-bottom: 60px;
+    padding-bottom: 0;
     overflow: hidden;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .cv_banner_wrapper::before {
@@ -542,6 +524,16 @@ section{
 .cv_banner_img {
     position: relative;
     text-align: center;
+    align-self: flex-end;
+    margin-bottom: 0;
+}
+
+.cv_banner_right_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
 
 .cv_banner_img::before {
@@ -584,7 +576,7 @@ section{
 }
 
 .cv_banner_text {
-    margin-top: 75px;
+    margin-top: 20px;
 }
 
 .cv_banner_text h5 {
@@ -665,11 +657,26 @@ section{
     text-align: center;
     position: relative;
     overflow: visible;
+    z-index: 1;
+    isolation: isolate;
+    margin-top: -20px;
 }
 
 .cv_banner_box p {
     margin-top: 10px;
     text-align: center;
+}
+
+.cv_banner_box::after {
+    content: "✦";
+    position: absolute;
+    top: -30px;
+    right: -20px;
+    font-size: 52px;
+    color: #ffffff;
+    pointer-events: none;
+    z-index: -1;
+    animation: float_star 3.5s ease-in-out infinite alternate;
 }
 
 /* -------------------------------------------------------
@@ -764,7 +771,7 @@ section{
      bnr-fs-4  → bottom-left small
      bnr-fs-5  → right-bottom corner small
 */
-.bnr-fs-1 { font-size: 30px; top: 58%;  right: 2.5%; animation-duration: 3.2s; animation-delay: 0s;    color: #ffffff; }
+.bnr-fs-1 { font-size: 30px; top: 25%;  left: 3%; animation-duration: 3.2s; animation-delay: 0s; color: #ffffff; z-index: 0; }
 .bnr-fs-2 { font-size: 14px; bottom: 12%; left: 48%;  animation-duration: 4.1s; animation-delay: 0.8s;  color: #3EAEFF; }
 .bnr-fs-3 { font-size: 16px; top: 18%;  right: 7%;  animation-duration: 3.7s; animation-delay: 0.4s;  color: #ffffff; }
 .bnr-fs-4 { font-size: 12px; bottom: 22%; left: 20%;  animation-duration: 4.5s; animation-delay: 1.2s; color: #D252FF; }
@@ -868,42 +875,14 @@ section{
     .bnr-yellow-circle, .bnr-yellow-dots { display: none; }
 }
 
-/* Mobile social sidebar — fixed left strip (phones only) */
+@media (max-width: 991px) {
+    .bnr-float-circle, .bnr-float-dot { display: none !important; }
+}
+
+/* Mobile social sidebar — hidden on phones */
 @media (max-width: 767px) {
     .cv_bnr_social {
-        display: flex !important;
-        position: fixed;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        z-index: 100;
-        background: rgba(15, 25, 47, 0.75);
-        backdrop-filter: blur(10px);
-        border-radius: 0 12px 12px 0;
-        padding: 12px 6px;
-        animation: bnr_social_float 4s ease-in-out infinite alternate;
-    }
-
-    .cv_bnr_social_line {
-        width: 1px;
-        height: 28px;
-    }
-
-    .cv_bnr_social ul {
-        gap: 10px;
-    }
-
-    .cv_bnr_social ul li a {
-        width: 32px;
-        height: 32px;
-    }
-
-    .cv_bnr_social ul li a img {
-        width: 14px;
-        height: 14px;
+        display: none !important;
     }
 }
 
@@ -912,6 +891,23 @@ section{
    ------------------------------------------------------- */
 .bnr-yellow-circle {
     display: none;
+}
+
+@media (min-width: 1200px) {
+    .bnr-yellow-circle {
+        display: block;
+        position: relative;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        border: 3px solid #F5C518;
+        opacity: 0.8;
+        margin-bottom: 20px;
+        margin-left: 0;
+        pointer-events: none;
+        z-index: 2;
+        animation: float_star 4s ease-in-out infinite alternate;
+    }
 }
 
 /* -------------------------------------------------------
@@ -925,42 +921,28 @@ section{
     background: #F5C518;
     pointer-events: none;
     z-index: 5;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 10px;
+    left: -15px;
+    transform: none;
+    z-index: -1;
     animation: yellow_dots_float 5s ease-in-out infinite alternate;
-    /* 4 columns × 3 rows of yellow dots via box-shadow */
+    /* 3 columns × 3 rows of yellow dots via box-shadow */
     box-shadow:
-        /* Row 1 */
         0px   0px  0 #F5C518,
         16px  0px  0 #F5C518,
         32px  0px  0 #F5C518,
-        48px  0px  0 #F5C518,
-        64px  0px  0 #F5C518,
-        /* Row 2 */
         0px   16px 0 #F5C518,
         16px  16px 0 #F5C518,
         32px  16px 0 #F5C518,
-        48px  16px 0 #F5C518,
-        64px  16px 0 #F5C518,
-        /* Row 3 */
         0px   32px 0 #F5C518,
         16px  32px 0 #F5C518,
-        32px  32px 0 #F5C518,
-        48px  32px 0 #F5C518,
-        64px  32px 0 #F5C518,
-        /* Row 4 */
-        0px   48px 0 #F5C518,
-        16px  48px 0 #F5C518,
-        32px  48px 0 #F5C518,
-        48px  48px 0 #F5C518,
-        64px  48px 0 #F5C518;
+        32px  32px 0 #F5C518;
     opacity: 0.75;
 }
 
 @keyframes yellow_dots_float {
-    0%   { transform: translateX(-50%) translateY(0);    opacity: 0.6; }
-    100% { transform: translateX(-50%) translateY(6px);  opacity: 0.9; }
+    0%   { transform: translateY(0);   opacity: 0.6; }
+    100% { transform: translateY(6px); opacity: 0.9; }
 }
 
 /* ---------------------------------------------

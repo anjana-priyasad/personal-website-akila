@@ -94,8 +94,8 @@ Max - Width Query
 	}
 
 	.cv_banner_wrapper {
-		padding: 100px 0 60px;
-		align-items: flex-start;
+		padding: 100px 0 0;
+		align-items: flex-end;
 	}
 	.cv_about_wrapper {
 		padding: 100px 0;
@@ -225,10 +225,21 @@ Max - Width Query
 	}
 
 	.cv_banner_wrapper {
-		padding: 75px 0 80px;
+		padding: 75px 0 0;
+		min-height: calc(100dvh - 70px);
+		display: flex;
+		flex-direction: column;
 		align-items: center;
-		justify-content: center;
-		min-height: 100dvh;
+		justify-content: space-between;
+	}
+
+	.cv_banner_wrapper .cv_container {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		width: 100%;
+		padding-bottom: 20px;
 	}
 
 	.cv_about_wrapper,
@@ -337,9 +348,11 @@ Max - Width Query
 	}
 
 	.cv_banner_img .bnr-boy {
-		max-height: 340px;
+		max-height: 420px;
 		width: auto;
+		max-width: 88%;
 		margin: 0 auto;
+		display: block;
 		position: relative;
 		z-index: 2;
 		-webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 98%);
@@ -348,8 +361,8 @@ Max - Width Query
 
 	.cv_banner_img::before {
 		max-width: 82%;
-		max-height: 260px;
-		height: 260px;
+		max-height: 360px;
+		height: 360px;
 		border-radius: 34px;
 		top: 60px;
 		left: 50%;
@@ -662,3 +675,43 @@ Max - Width Query
 	margin-top: 6px;
 	color: #fff;
 }
+
+/* Tablet — gradient mask on photo and teal box */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+	.cv_banner_img .bnr-boy {
+		-webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 90%);
+		mask-image: linear-gradient(to bottom, black 70%, transparent 90%);
+	}
+
+	.cv_banner_img::before {
+		-webkit-mask-image: none;
+		mask-image: none;
+	}
+
+	/* Star — upper-right on tablet too */
+	.cv_banner_box::after {
+		top: -30px;
+		right: -20px;
+		left: auto;
+	}
+}
+
+/* Mobile — remove right column flex so no gap before footer */
+@media (max-width: 767.98px) {
+	.cv_banner_right_col {
+		display: block;
+		padding-bottom: 0;
+	}
+
+	.cv_footer_wrapper {
+		display: none;
+	}
+
+	/* Balance floating stars left & right on mobile */
+	.bnr-fs-1 { top: 38%;  right: 4%;  left: auto;   font-size: 26px; }
+	.bnr-fs-2 { top: 72%;  left: 4%;   right: auto;  bottom: auto; font-size: 14px; }
+	.bnr-fs-3 { top: 12%;  right: 5%;  left: auto;   font-size: 16px; }
+	.bnr-fs-4 { top: 60%;  left: 3%;   right: auto;  bottom: auto; font-size: 14px; }
+	.bnr-fs-5 { bottom: 18%; right: 4%; left: auto;  font-size: 18px; }
+}
+
