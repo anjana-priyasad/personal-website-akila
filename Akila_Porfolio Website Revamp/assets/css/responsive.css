@@ -703,10 +703,6 @@ Max - Width Query
 		padding-bottom: 0;
 	}
 
-	.cv_footer_wrapper {
-		display: none;
-	}
-
 	/* Balance floating stars left & right on mobile */
 	.bnr-fs-1 { top: 38%;  right: 4%;  left: auto;   font-size: 26px; }
 	.bnr-fs-2 { top: 72%;  left: 4%;   right: auto;  bottom: auto; font-size: 14px; }
