@@ -703,11 +703,115 @@ Max - Width Query
 		padding-bottom: 0;
 	}
 
-	/* Balance floating stars left & right on mobile */
-	.bnr-fs-1 { top: 38%;  right: 4%;  left: auto;   font-size: 26px; }
-	.bnr-fs-2 { top: 72%;  left: 4%;   right: auto;  bottom: auto; font-size: 14px; }
-	.bnr-fs-3 { top: 12%;  right: 5%;  left: auto;   font-size: 16px; }
-	.bnr-fs-4 { top: 60%;  left: 3%;   right: auto;  bottom: auto; font-size: 14px; }
-	.bnr-fs-5 { bottom: 18%; right: 4%; left: auto;  font-size: 18px; }
+	/* bnr-fs-1 → right side dot grid (bottom of teal box) */
+	.bnr-fs-1 {
+		display: block !important;
+		font-size: 0;
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		background: rgba(255,255,255,0.7);
+		box-shadow:
+			0px   0px  0 rgba(255,255,255,0.7),
+			18px  0px  0 rgba(255,255,255,0.7),
+			36px  0px  0 rgba(255,255,255,0.7),
+			0px   18px 0 rgba(255,255,255,0.7),
+			18px  18px 0 rgba(255,255,255,0.7),
+			36px  18px 0 rgba(255,255,255,0.7),
+			0px   36px 0 rgba(255,255,255,0.7),
+			18px  36px 0 rgba(255,255,255,0.7),
+			36px  36px 0 rgba(255,255,255,0.7),
+			0px   54px 0 rgba(255,255,255,0.7),
+			18px  54px 0 rgba(255,255,255,0.7),
+			36px  54px 0 rgba(255,255,255,0.7);
+		right: 16%;
+		left: auto;
+		top: 38%;
+		animation: none;
+	}
+
+	/* bnr-fs-3 → right side star (upper area) */
+	.bnr-fs-3 {
+		display: block !important;
+		font-size: 24px;
+		color: #ffffff;
+		right: 8%;
+		left: auto;
+		top: 22%;
+		animation-duration: 3.7s;
+	}
+
+	/* Rebalance remaining small stars */
+	.bnr-fs-2 { top: 68%;  left: 4%;  right: auto; bottom: auto; font-size: 13px; }
+	.bnr-fs-4 { top: 55%;  left: 3%;  right: auto; bottom: auto; font-size: 12px; }
+	.bnr-fs-5 { top: 63%;  right: 5%; left: auto;  bottom: auto; font-size: 14px; color: #2EE3B8; }
+
+	/* Extra right-side star to balance left — using wrapper::after */
+	.cv_banner_wrapper::after {
+		content: "✦";
+		position: absolute;
+		top: 76%;
+		right: 4%;
+		font-size: 12px;
+		color: #D252FF;
+		pointer-events: none;
+		animation: float_star 4.2s ease-in-out infinite alternate;
+	}
+
+	/* White dot grid inside teal image box — replaces hidden stars */
+	.cv_banner_img::after {
+		content: '';
+		position: absolute;
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		background: rgba(255, 255, 255, 0.7);
+		box-shadow:
+			0px   0px  0 rgba(255,255,255,0.7),
+			18px  0px  0 rgba(255,255,255,0.7),
+			36px  0px  0 rgba(255,255,255,0.7),
+			0px   18px 0 rgba(255,255,255,0.7),
+			18px  18px 0 rgba(255,255,255,0.7),
+			36px  18px 0 rgba(255,255,255,0.7),
+			0px   36px 0 rgba(255,255,255,0.7),
+			18px  36px 0 rgba(255,255,255,0.7),
+			36px  36px 0 rgba(255,255,255,0.7),
+			0px   54px 0 rgba(255,255,255,0.7),
+			18px  54px 0 rgba(255,255,255,0.7),
+			36px  54px 0 rgba(255,255,255,0.7);
+		left: 22px;
+		top: 26%;
+		pointer-events: none;
+		z-index: 2;
+	}
+
+	/* ===== Mobile: Show decorative elements ===== */
+
+	/* Info box — show on mobile */
+	.cv_banner_box {
+		display: block !important;
+		margin-top: 100px;
+		padding: 20px 18px 24px;
+	}
+
+	/* Yellow circle — small, centered above text on mobile */
+	.bnr-yellow-circle {
+		display: block !important;
+		width: 36px;
+		height: 36px;
+		border-radius: 50%;
+		border: 2.5px solid #F5C518;
+		opacity: 0.85;
+		margin: 0 auto 12px;
+		position: relative;
+		pointer-events: none;
+		animation: float_star 4s ease-in-out infinite alternate;
+	}
+
+	/* Yellow dot grid — show inside box */
+	.bnr-yellow-dots {
+		display: block !important;
+	}
+
 }
 
