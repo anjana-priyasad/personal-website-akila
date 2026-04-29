@@ -343,6 +343,25 @@ Max - Width Query
 
 @media (max-width:575.98px) {
 
+	.cv_banner_text {
+		text-align: center;
+	}
+
+	.cv_banner_text .cv_btn {
+		margin: 15px auto 25px;
+		display: flex;
+	}
+
+	.cv_banner_box {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	.cv_footer_text {
+		text-align: center;
+	}
+
 	.cv_banner_img .bnr-sqr {
 		display: none;
 	}
@@ -565,6 +584,13 @@ Max - Width Query
 		padding: 15px 15px 30px;
 	}
 
+	.cv_edu_box.box-1,
+	.cv_edu_box.box-2,
+	.cv_edu_box.box-3,
+	.cv_edu_box.box-4 {
+		border-radius: 11px !important;
+	}
+
 	/* Fix: Skill card percentage text splitting onto two lines */
 	.cv_skill_text {
 		align-items: center;
@@ -627,22 +653,29 @@ Max - Width Query
 	.cv_project_text {
 		padding: 52px 18px 18px !important;
 		margin: 0 3% !important;
-		background: linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.03) 100%) !important;
-		background-image: none !important;
+		background: linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%) !important;
 		border: 1px solid rgba(255,255,255,0.08) !important;
 		border-radius: 12px !important;
 		backdrop-filter: none !important;
 		text-align: center;
 		position: relative;
 		z-index: 1;
+		overflow: hidden !important;
 	}
 
 	.cv_project_text::before {
-		display: none !important;
+		display: block !important;
+		background: linear-gradient(135deg, rgba(62,174,255,0.28) 0%, rgba(24,198,218,0.10) 100%) !important;
+		z-index: 1 !important;
+		transform: scale(0) !important;
+		transform-origin: top left !important;
+		transition: transform 0.55s ease !important;
 	}
 
 	.cv_project_heading {
 		justify-content: center !important;
+		position: relative;
+		z-index: 2;
 	}
 
 	.cv_project_heading span {
@@ -651,6 +684,11 @@ Max - Width Query
 
 	.cv_project_heading p {
 		color: var(--cv-primary-color) !important;
+	}
+
+	.cv_project_title {
+		position: relative;
+		z-index: 2;
 	}
 
 	.cv_project_title p {
@@ -665,10 +703,6 @@ Max - Width Query
 		transition: transform 0.3s ease;
 	}
 
-	.cv_project_text {
-		transition: border-color 0.3s ease, background 0.3s ease;
-	}
-
 	.cv_project_box:hover {
 		transform: translateY(-6px);
 	}
@@ -677,9 +711,8 @@ Max - Width Query
 		filter: brightness(1.12);
 	}
 
-	.cv_project_box:hover .cv_project_text {
-		border-color: var(--cv-primary-color) !important;
-		background: linear-gradient(180deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.07) 100%) !important;
+	.cv_project_box:hover .cv_project_text::before {
+		transform: scale(1) !important;
 	}
 }
 
@@ -713,10 +746,6 @@ Max - Width Query
 		padding: 0;
 	}
 
-	.cv_project_text {
-		transition: border-color 0.3s ease, background 0.3s ease;
-	}
-
 	.cv_project_box:hover {
 		transform: translateY(-6px);
 	}
@@ -725,9 +754,8 @@ Max - Width Query
 		filter: brightness(1.12);
 	}
 
-	.cv_project_box:hover .cv_project_text {
-		border-color: var(--cv-primary-color) !important;
-		background: linear-gradient(180deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.07) 100%) !important;
+	.cv_project_box:hover .cv_project_text::before {
+		transform: scale(1) !important;
 	}
 
 	.cv_project_img {
@@ -750,7 +778,7 @@ Max - Width Query
 
 	.cv_project_text {
 		border-radius: 12px !important;
-		background: linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.03) 100%) !important;
+		background: linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%) !important;
 		border: 1px solid rgba(255,255,255,0.08) !important;
 		padding: 52px 18px 20px !important;
 		margin: 0 3% !important;
@@ -758,10 +786,22 @@ Max - Width Query
 		text-align: center;
 		position: relative;
 		z-index: 1;
+		overflow: hidden !important;
 	}
 
 	.cv_project_text::before {
-		display: none !important;
+		display: block !important;
+		background: linear-gradient(135deg, rgba(62,174,255,0.28) 0%, rgba(24,198,218,0.10) 100%) !important;
+		z-index: 1 !important;
+		transform: scale(0) !important;
+		transform-origin: top left !important;
+		transition: transform 0.55s ease !important;
+	}
+
+	.cv_project_heading,
+	.cv_project_title {
+		position: relative;
+		z-index: 2;
 	}
 
 	.cv_project_content {
@@ -940,7 +980,7 @@ Max - Width Query
 	/* Info box — show on mobile */
 	.cv_banner_box {
 		display: block !important;
-		margin-top: 100px;
+		margin: 40px auto 20px;
 		padding: 20px 18px 24px;
 	}
 
@@ -971,24 +1011,52 @@ Max - Width Query
 	box-shadow: 0 0 0 1.5px var(--cv-primary-color), 0 10px 32px rgba(24, 198, 218, 0.22) !important;
 }
 
-/* ===== Latest Projects — text box hover via box-shadow (no border conflict) ===== */
+/* ===== Latest Projects — diagonal fill sweep (top-left → bottom-right) on hover ===== */
 .cv_project_box {
 	cursor: pointer;
+	transition: transform 0.3s ease !important;
 }
 
 .cv_project_text {
-	transition: box-shadow 0.3s ease, transform 0.3s ease !important;
+	overflow: hidden !important;
 }
 
-.cv_project_box {
-	transition: transform 0.3s ease !important;
+.cv_project_text::before {
+	display: block !important;
+	background: linear-gradient(135deg, rgba(62,174,255,0.28) 0%, rgba(24,198,218,0.10) 100%) !important;
+	z-index: 1 !important;
+	transform: scale(0) !important;
+	transform-origin: top left !important;
+	transition: transform 0.55s ease !important;
+}
+
+.cv_project_heading,
+.cv_project_title {
+	position: relative;
+	z-index: 2;
 }
 
 .cv_project_box:hover {
 	transform: translateY(-6px) !important;
 }
 
-.cv_project_box:hover .cv_project_text {
-	box-shadow: 0 0 0 1.5px var(--cv-primary-color), 0 8px 28px rgba(24, 198, 218, 0.2) !important;
+.cv_project_box:hover .cv_project_text::before {
+	transform: scale(1) !important;
 }
 
+/* ===== Pink ring — hidden on all screen sizes ===== */
+.cv_pink_ring {
+	display: none !important;
+}
+
+/* ===== Index — hide floating text stars on all screen sizes ===== */
+.bnr-fs-2,
+.bnr-fs-3,
+.bnr-fs-4,
+.bnr-fs-5 {
+	display: none !important;
+}
+
+.cv_banner_wrapper::after {
+	display: none !important;
+}

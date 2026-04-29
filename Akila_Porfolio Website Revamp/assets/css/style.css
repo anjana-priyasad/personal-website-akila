@@ -743,15 +743,14 @@ section{
     text-align: center;
 }
 
-.cv_banner_box::after {
-    content: "✦";
+.cv_banner_box_star {
     position: absolute;
-    top: -30px;
-    right: -20px;
-    font-size: 52px;
-    color: #ffffff;
+    top: -22px;
+    right: -18px;
+    width: 52px;
+    height: auto;
     pointer-events: none;
-    z-index: -1;
+    z-index: 2;
     animation: float_star 3.5s ease-in-out infinite alternate;
 }
 
@@ -1267,9 +1266,9 @@ section{
     backdrop-filter: blur(3.5px);
     padding: 5px 25px 45px;
     transition: all 0.5s;
-    cursor: pointer; 
+    cursor: pointer;
     position: relative;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .cv_edu_box.box-1 {
@@ -1304,6 +1303,7 @@ section{
     transform: scale(0);
     transition: all 0.5s;
     transform-origin: top left;
+    border-radius: inherit;
 }
 
 .cv_edu_box:hover::before{
