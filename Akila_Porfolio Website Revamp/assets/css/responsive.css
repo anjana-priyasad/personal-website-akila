@@ -949,6 +949,11 @@ Max - Width Query
 		display: none !important;
 	}
 
+	/* Pink ring — hidden on mobile */
+	.cv_pink_ring {
+		display: none !important;
+	}
+
 	/* Yellow dot grid — show inside box */
 	.bnr-yellow-dots {
 		display: block !important;
