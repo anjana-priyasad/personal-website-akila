@@ -952,6 +952,7 @@ section{
 
 @media (max-width: 991px) {
     .bnr-float-circle, .bnr-float-dot { display: none !important; }
+    .bnr-yellow-ring { display: none !important; }
 }
 
 /* Mobile social sidebar — hidden on phones */
