@@ -609,7 +609,7 @@ Max - Width Query
 	.cv_project_img {
 		margin-bottom: -38px !important;
 		padding: 0 10% !important;
-		border-radius: 0 !important;
+		border-radius: 14px !important;
 		position: relative;
 		z-index: 2;
 		transform: none !important;
@@ -620,7 +620,7 @@ Max - Width Query
 		max-height: 190px;
 		width: 100%;
 		object-fit: cover;
-		border-radius: 0 !important;
+		border-radius: 14px !important;
 		display: block;
 	}
 
@@ -660,6 +660,27 @@ Max - Width Query
 		overflow: visible !important;
 		text-overflow: unset !important;
 	}
+
+	.cv_project_box {
+		transition: transform 0.3s ease;
+	}
+
+	.cv_project_text {
+		transition: border-color 0.3s ease, background 0.3s ease;
+	}
+
+	.cv_project_box:hover {
+		transform: translateY(-6px);
+	}
+
+	.cv_project_box:hover .cv_project_img img {
+		filter: brightness(1.12);
+	}
+
+	.cv_project_box:hover .cv_project_text {
+		border-color: var(--cv-primary-color) !important;
+		background: linear-gradient(180deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.07) 100%) !important;
+	}
 }
 
 /* bnr-fs-1 moved into cv_banner_img — restore desktop sparkle position relative to that container */
@@ -692,14 +713,27 @@ Max - Width Query
 		padding: 0;
 	}
 
+	.cv_project_text {
+		transition: border-color 0.3s ease, background 0.3s ease;
+	}
+
 	.cv_project_box:hover {
-		transform: translateY(-3px);
+		transform: translateY(-6px);
+	}
+
+	.cv_project_box:hover .cv_project_img img {
+		filter: brightness(1.12);
+	}
+
+	.cv_project_box:hover .cv_project_text {
+		border-color: var(--cv-primary-color) !important;
+		background: linear-gradient(180deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.07) 100%) !important;
 	}
 
 	.cv_project_img {
 		margin-bottom: -38px !important;
 		padding: 0 10% !important;
-		border-radius: 0 !important;
+		border-radius: 14px !important;
 		position: relative;
 		z-index: 2;
 		width: 100%;
@@ -711,7 +745,7 @@ Max - Width Query
 		max-height: 210px;
 		object-fit: cover;
 		display: block;
-		border-radius: 0 !important;
+		border-radius: 14px !important;
 	}
 
 	.cv_project_text {
@@ -750,6 +784,11 @@ Max - Width Query
 	.cv_project_title p {
 		color: #ffffff !important;
 	}
+}
+
+/* Project card — image transition (shared) */
+.cv_project_img img {
+	transition: filter 0.3s ease;
 }
 
 /* Project card text styles — shared */
@@ -915,5 +954,36 @@ Max - Width Query
 		display: block !important;
 	}
 
+}
+
+/* ===== What I Do — enhanced hover ===== */
+.cv_do_box {
+	transition: transform 0.35s ease, box-shadow 0.35s ease !important;
+}
+
+.cv_do_box:hover {
+	transform: translateY(-5px) !important;
+	box-shadow: 0 0 0 1.5px var(--cv-primary-color), 0 10px 32px rgba(24, 198, 218, 0.22) !important;
+}
+
+/* ===== Latest Projects — text box hover via box-shadow (no border conflict) ===== */
+.cv_project_box {
+	cursor: pointer;
+}
+
+.cv_project_text {
+	transition: box-shadow 0.3s ease, transform 0.3s ease !important;
+}
+
+.cv_project_box {
+	transition: transform 0.3s ease !important;
+}
+
+.cv_project_box:hover {
+	transform: translateY(-6px) !important;
+}
+
+.cv_project_box:hover .cv_project_text {
+	box-shadow: 0 0 0 1.5px var(--cv-primary-color), 0 8px 28px rgba(24, 198, 218, 0.2) !important;
 }
 
