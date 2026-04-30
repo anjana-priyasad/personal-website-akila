@@ -1007,9 +1007,9 @@ Max - Width Query
 		display: none !important;
 	}
 
-	/* Yellow dot grid — show inside box */
+	/* Yellow dot grid — hidden on mobile */
 	.bnr-yellow-dots {
-		display: block !important;
+		display: none !important;
 	}
 
 }
