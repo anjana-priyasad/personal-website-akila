@@ -29,6 +29,18 @@ Min - Width Query
 Max - Width Query
 ============================*/
 
+.cv_banner_box_star,
+.bnr-yellow-dots,
+.bnr-yellow-circle {
+    display: none !important;
+}
+
+@media (min-width: 992px) {
+    .cv_banner_right_col {
+        padding-top: 100px;
+    }
+}
+
 @media (max-width: 1700px) {
 
 	.cv_about_content {
@@ -634,7 +646,7 @@ Max - Width Query
 	}
 
 	.cv_project_img {
-		margin-bottom: -38px !important;
+		margin-bottom: -90px !important;
 		padding: 0 10% !important;
 		border-radius: 14px !important;
 		position: relative;
@@ -643,8 +655,8 @@ Max - Width Query
 	}
 
 	.cv_project_img img {
-		height: 190px;
-		max-height: 190px;
+		height: 210px;
+		max-height: 210px;
 		width: 100%;
 		object-fit: cover;
 		border-radius: 14px !important;
@@ -652,7 +664,7 @@ Max - Width Query
 	}
 
 	.cv_project_text {
-		padding: 52px 18px 18px !important;
+		padding: 105px 18px 24px !important;
 		margin: 0 3% !important;
 		background: linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%) !important;
 		border: 1px solid rgba(255,255,255,0.08) !important;
@@ -760,7 +772,7 @@ Max - Width Query
 	}
 
 	.cv_project_img {
-		margin-bottom: -38px !important;
+		margin-bottom: -90px !important;
 		padding: 0 10% !important;
 		border-radius: 14px !important;
 		position: relative;
@@ -770,8 +782,8 @@ Max - Width Query
 
 	.cv_project_img img {
 		width: 100%;
-		height: 210px;
-		max-height: 210px;
+		height: 230px;
+		max-height: 230px;
 		object-fit: cover;
 		display: block;
 		border-radius: 14px !important;
@@ -781,7 +793,7 @@ Max - Width Query
 		border-radius: 12px !important;
 		background: linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%) !important;
 		border: 1px solid rgba(255,255,255,0.08) !important;
-		padding: 52px 18px 20px !important;
+		padding: 105px 18px 20px !important;
 		margin: 0 3% !important;
 		backdrop-filter: none !important;
 		text-align: center;
