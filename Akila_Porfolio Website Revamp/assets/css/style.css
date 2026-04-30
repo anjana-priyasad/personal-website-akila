@@ -1133,10 +1133,15 @@ section{
 }
 
 .cv_about_box {
-    border-radius: 0 10px 10px 0;
-    background-color: rgb(255 255 255 / 9%);
-    border: 1px solid rgb(255 255 255 / 21%);
-    backdrop-filter: blur(6px);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.25),
+        inset 0 0 40px rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
     padding: 40px 90px;
     margin: 20px 0 23px;
 }

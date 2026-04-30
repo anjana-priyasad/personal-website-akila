@@ -498,7 +498,8 @@ Max - Width Query
 	}
 
 	.cv_edu_box {
-		max-width: 100%;
+		width: 100% !important;
+		max-width: 100% !important;
 	}
 
 	.cv_exp_box {
@@ -579,8 +580,8 @@ Max - Width Query
 	}
 
 	.cv_edu_box {
-		width: 100%;
-		max-width: 100%;
+		width: 50%;
+		max-width: 50%;
 		padding: 15px 15px 30px;
 	}
 
@@ -1059,4 +1060,18 @@ Max - Width Query
 
 .cv_banner_wrapper::after {
 	display: none !important;
+}
+
+/* ===== Education cards — force 2-column grid on tablet (576px–1199px) ===== */
+@media (min-width: 576px) and (max-width: 1199.98px) {
+	.cv_edu_info {
+		display: grid !important;
+		grid-template-columns: 1fr 1fr !important;
+		align-items: start;
+	}
+	.cv_edu_box {
+		width: 100% !important;
+		max-width: 100% !important;
+		min-width: 0 !important;
+	}
 }
