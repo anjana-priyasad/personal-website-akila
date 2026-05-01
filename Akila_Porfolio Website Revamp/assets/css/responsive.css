@@ -40,6 +40,43 @@ Max - Width Query
     .cv_banner_right_col {
         padding-top: 100px;
     }
+
+}
+
+@media (min-width: 1200px) {
+    /* Desktop: Left and right corner backlight gradients for all pages */
+    .cv_main_wrapper::after {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none;
+        z-index: 0;
+        background: 
+            radial-gradient(circle at -5% 10%, rgba(24, 198, 218, 0.15) 0%, transparent 45%),
+            radial-gradient(circle at 105% 20%, rgba(62, 174, 255, 0.15) 0%, transparent 45%);
+    }
+
+    /* Contact Page: Glow between Map and Text */
+    .cv_map_wrapper::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 66.66%;
+        transform: translate(-50%, -50%);
+        width: 450px;
+        height: 450px;
+        background: radial-gradient(circle at center, rgba(62, 174, 255, 0.25) 0%, rgba(24, 198, 218, 0.1) 40%, transparent 65%);
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    .cv_map_wrapper .cv_container {
+        position: relative;
+        z-index: 1;
+    }
 }
 
 /* Desktop + tablet — title dots and bio box decorations */
