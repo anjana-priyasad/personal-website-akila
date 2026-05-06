@@ -53,22 +53,13 @@ Max - Width Query
     }
 }
 
-/* Desktop: full size glows */
+/* Desktop: left glow + right spot centered on white dot grid */
 @media (min-width: 1200px) {
     .cv_banner_wrapper::before {
         background:
             radial-gradient(ellipse 30% 40% at 14% 50%, rgba(24, 198, 218, 0.28) 0%, rgba(24, 198, 218, 0.14) 30%, rgba(24, 198, 218, 0.05) 65%, transparent 100%),
-            radial-gradient(ellipse 12% 18% at 88% 18%, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 50%, transparent 100%) !important;
+            radial-gradient(ellipse 8% 12% at 91% 20%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.08) 40%, transparent 100%) !important;
         pointer-events: none;
-    }
-}
-
-@media (min-width: 1200px) {
-    /* Desktop: Right side spot glow near white dot grid */
-    .cv_banner_wrapper::before {
-        background:
-            radial-gradient(ellipse 30% 40% at 14% 50%, rgba(24, 198, 218, 0.28) 0%, rgba(24, 198, 218, 0.14) 30%, rgba(24, 198, 218, 0.05) 65%, transparent 100%),
-            radial-gradient(ellipse 12% 18% at 88% 18%, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 50%, transparent 100%) !important;
     }
 }
 
@@ -127,8 +118,8 @@ Max - Width Query
     .bnr-title-dots {
         display: block;
         position: absolute;
-        right: 40px;
-        top: 0;
+        right: 145px;
+        top: -48px;
         width: 4px;
         height: 4px;
         border-radius: 50%;
@@ -138,15 +129,23 @@ Max - Width Query
             0px   0px  0 rgba(255,255,255,0.75),
             14px  0px  0 rgba(255,255,255,0.75),
             28px  0px  0 rgba(255,255,255,0.75),
+            42px  0px  0 rgba(255,255,255,0.75),
+            56px  0px  0 rgba(255,255,255,0.75),
             0px   14px 0 rgba(255,255,255,0.75),
             14px  14px 0 rgba(255,255,255,0.75),
             28px  14px 0 rgba(255,255,255,0.75),
+            42px  14px 0 rgba(255,255,255,0.75),
+            56px  14px 0 rgba(255,255,255,0.75),
             0px   28px 0 rgba(255,255,255,0.75),
             14px  28px 0 rgba(255,255,255,0.75),
             28px  28px 0 rgba(255,255,255,0.75),
+            42px  28px 0 rgba(255,255,255,0.75),
+            56px  28px 0 rgba(255,255,255,0.75),
             0px   42px 0 rgba(255,255,255,0.75),
             14px  42px 0 rgba(255,255,255,0.75),
-            28px  42px 0 rgba(255,255,255,0.75);
+            28px  42px 0 rgba(255,255,255,0.75),
+            42px  42px 0 rgba(255,255,255,0.75),
+            56px  42px 0 rgba(255,255,255,0.75);
     }
 }
 
