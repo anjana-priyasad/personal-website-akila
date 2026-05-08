@@ -47,8 +47,7 @@ Max - Width Query
 @media (min-width: 768px) and (max-width: 1199.98px) {
     .cv_banner_wrapper::before {
         background:
-            radial-gradient(ellipse 18% 24% at 18% 50%, rgba(24, 198, 218, 0.22) 0%, rgba(24, 198, 218, 0.16) 20%, rgba(24, 198, 218, 0.09) 50%, rgba(24, 198, 218, 0.03) 75%, transparent 100%),
-            radial-gradient(ellipse 8% 12% at 90% 18%, rgba(255, 255, 255, 0.09) 0%, transparent 100%) !important;
+            radial-gradient(ellipse 18% 24% at 18% 50%, rgba(24, 198, 218, 0.22) 0%, rgba(24, 198, 218, 0.16) 20%, rgba(24, 198, 218, 0.09) 50%, rgba(24, 198, 218, 0.03) 75%, transparent 100%) !important;
         pointer-events: none;
     }
 }
@@ -57,8 +56,7 @@ Max - Width Query
 @media (min-width: 1200px) {
     .cv_banner_wrapper::before {
         background:
-            radial-gradient(ellipse 30% 40% at 14% 50%, rgba(24, 198, 218, 0.28) 0%, rgba(24, 198, 218, 0.14) 30%, rgba(24, 198, 218, 0.05) 65%, transparent 100%),
-            radial-gradient(ellipse 8% 12% at 91% 20%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.08) 40%, transparent 100%) !important;
+            radial-gradient(ellipse 30% 40% at 14% 50%, rgba(24, 198, 218, 0.28) 0%, rgba(24, 198, 218, 0.14) 30%, rgba(24, 198, 218, 0.05) 65%, transparent 100%) !important;
         pointer-events: none;
     }
 }
@@ -75,8 +73,7 @@ Max - Width Query
         pointer-events: none;
         z-index: 0;
         background:
-            radial-gradient(circle at -5% 10%, rgba(24, 198, 218, 0.20) 0%, transparent 50%),
-            radial-gradient(circle at 105% 20%, rgba(62, 174, 255, 0.15) 0%, transparent 45%);
+            radial-gradient(circle at -5% 10%, rgba(24, 198, 218, 0.20) 0%, transparent 50%);
     }
 
     /* Contact Page: Glow between Map and Text */
@@ -215,7 +212,7 @@ Max - Width Query
 @media (max-width:1499.98px) {
 
 	.cv_banner_img .bnr-line {
-		right: -148px;
+		right: -100px;
 		top: -135px;
 	}
 
@@ -265,7 +262,12 @@ Max - Width Query
 	}
 
 	.cv_banner_img .bnr-line {
-		right: 95px;
+		right: 60px;
+	}
+
+	.cv_banner_img .bnr-star {
+		left: 140px;
+		bottom: 140px;
 	}
 
 	.cv_banner_wrapper::before {
