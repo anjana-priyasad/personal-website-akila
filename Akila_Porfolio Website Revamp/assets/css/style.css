@@ -652,8 +652,8 @@ section {
             26px 104px 0 rgba(255, 255, 255, 0.88),
             52px 104px 0 rgba(255, 255, 255, 0.88),
             78px 104px 0 rgba(255, 255, 255, 0.88);
-        left: calc(50% - 220px);
-        top: 30%;
+        left: calc(50% - 180px);
+        top: 33%;
         pointer-events: none;
         z-index: 0;
         animation: cv_ud 2.5s infinite alternate;
@@ -689,8 +689,8 @@ section {
             26px 104px 0 rgba(255, 255, 255, 0.88),
             52px 104px 0 rgba(255, 255, 255, 0.88),
             78px 104px 0 rgba(255, 255, 255, 0.88);
-        left: 100px;
-        top: 30%;
+        left: 155px;
+        top: 33%;
         pointer-events: none;
         z-index: 0;
         animation: cv_ud 2.5s infinite alternate;
