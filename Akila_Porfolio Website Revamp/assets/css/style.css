@@ -627,33 +627,33 @@ section {
     .cv_banner_img::after {
         content: '';
         position: absolute;
-        width: 8px;
-        height: 8px;
+        width: 9px;
+        height: 9px;
         border-radius: 50%;
         background: rgba(255, 255, 255, 0.88);
         box-shadow:
             0px 0px 0 rgba(255, 255, 255, 0.88),
-            22px 0px 0 rgba(255, 255, 255, 0.88),
-            44px 0px 0 rgba(255, 255, 255, 0.88),
-            66px 0px 0 rgba(255, 255, 255, 0.88),
-            0px 22px 0 rgba(255, 255, 255, 0.88),
-            22px 22px 0 rgba(255, 255, 255, 0.88),
-            44px 22px 0 rgba(255, 255, 255, 0.88),
-            66px 22px 0 rgba(255, 255, 255, 0.88),
-            0px 44px 0 rgba(255, 255, 255, 0.88),
-            22px 44px 0 rgba(255, 255, 255, 0.88),
-            44px 44px 0 rgba(255, 255, 255, 0.88),
-            66px 44px 0 rgba(255, 255, 255, 0.88),
-            0px 66px 0 rgba(255, 255, 255, 0.88),
-            22px 66px 0 rgba(255, 255, 255, 0.88),
-            44px 66px 0 rgba(255, 255, 255, 0.88),
-            66px 66px 0 rgba(255, 255, 255, 0.88),
-            0px 88px 0 rgba(255, 255, 255, 0.88),
-            22px 88px 0 rgba(255, 255, 255, 0.88),
-            44px 88px 0 rgba(255, 255, 255, 0.88),
-            66px 88px 0 rgba(255, 255, 255, 0.88);
-        left: calc(50% - 160px);
-        top: 34%;
+            26px 0px 0 rgba(255, 255, 255, 0.88),
+            52px 0px 0 rgba(255, 255, 255, 0.88),
+            78px 0px 0 rgba(255, 255, 255, 0.88),
+            0px 26px 0 rgba(255, 255, 255, 0.88),
+            26px 26px 0 rgba(255, 255, 255, 0.88),
+            52px 26px 0 rgba(255, 255, 255, 0.88),
+            78px 26px 0 rgba(255, 255, 255, 0.88),
+            0px 52px 0 rgba(255, 255, 255, 0.88),
+            26px 52px 0 rgba(255, 255, 255, 0.88),
+            52px 52px 0 rgba(255, 255, 255, 0.88),
+            78px 52px 0 rgba(255, 255, 255, 0.88),
+            0px 78px 0 rgba(255, 255, 255, 0.88),
+            26px 78px 0 rgba(255, 255, 255, 0.88),
+            52px 78px 0 rgba(255, 255, 255, 0.88),
+            78px 78px 0 rgba(255, 255, 255, 0.88),
+            0px 104px 0 rgba(255, 255, 255, 0.88),
+            26px 104px 0 rgba(255, 255, 255, 0.88),
+            52px 104px 0 rgba(255, 255, 255, 0.88),
+            78px 104px 0 rgba(255, 255, 255, 0.88);
+        left: calc(50% - 220px);
+        top: 30%;
         pointer-events: none;
         z-index: 0;
         animation: cv_ud 2.5s infinite alternate;
@@ -664,33 +664,33 @@ section {
     .cv_banner_img::after {
         content: '';
         position: absolute;
-        width: 8px;
-        height: 8px;
+        width: 9px;
+        height: 9px;
         border-radius: 50%;
         background: rgba(255, 255, 255, 0.88);
         box-shadow:
             0px 0px 0 rgba(255, 255, 255, 0.88),
-            22px 0px 0 rgba(255, 255, 255, 0.88),
-            44px 0px 0 rgba(255, 255, 255, 0.88),
-            66px 0px 0 rgba(255, 255, 255, 0.88),
-            0px 22px 0 rgba(255, 255, 255, 0.88),
-            22px 22px 0 rgba(255, 255, 255, 0.88),
-            44px 22px 0 rgba(255, 255, 255, 0.88),
-            66px 22px 0 rgba(255, 255, 255, 0.88),
-            0px 44px 0 rgba(255, 255, 255, 0.88),
-            22px 44px 0 rgba(255, 255, 255, 0.88),
-            44px 44px 0 rgba(255, 255, 255, 0.88),
-            66px 44px 0 rgba(255, 255, 255, 0.88),
-            0px 66px 0 rgba(255, 255, 255, 0.88),
-            22px 66px 0 rgba(255, 255, 255, 0.88),
-            44px 66px 0 rgba(255, 255, 255, 0.88),
-            66px 66px 0 rgba(255, 255, 255, 0.88),
-            0px 88px 0 rgba(255, 255, 255, 0.88),
-            22px 88px 0 rgba(255, 255, 255, 0.88),
-            44px 88px 0 rgba(255, 255, 255, 0.88),
-            66px 88px 0 rgba(255, 255, 255, 0.88);
-        left: 200px;
-        top: 34%;
+            26px 0px 0 rgba(255, 255, 255, 0.88),
+            52px 0px 0 rgba(255, 255, 255, 0.88),
+            78px 0px 0 rgba(255, 255, 255, 0.88),
+            0px 26px 0 rgba(255, 255, 255, 0.88),
+            26px 26px 0 rgba(255, 255, 255, 0.88),
+            52px 26px 0 rgba(255, 255, 255, 0.88),
+            78px 26px 0 rgba(255, 255, 255, 0.88),
+            0px 52px 0 rgba(255, 255, 255, 0.88),
+            26px 52px 0 rgba(255, 255, 255, 0.88),
+            52px 52px 0 rgba(255, 255, 255, 0.88),
+            78px 52px 0 rgba(255, 255, 255, 0.88),
+            0px 78px 0 rgba(255, 255, 255, 0.88),
+            26px 78px 0 rgba(255, 255, 255, 0.88),
+            52px 78px 0 rgba(255, 255, 255, 0.88),
+            78px 78px 0 rgba(255, 255, 255, 0.88),
+            0px 104px 0 rgba(255, 255, 255, 0.88),
+            26px 104px 0 rgba(255, 255, 255, 0.88),
+            52px 104px 0 rgba(255, 255, 255, 0.88),
+            78px 104px 0 rgba(255, 255, 255, 0.88);
+        left: 100px;
+        top: 30%;
         pointer-events: none;
         z-index: 0;
         animation: cv_ud 2.5s infinite alternate;
