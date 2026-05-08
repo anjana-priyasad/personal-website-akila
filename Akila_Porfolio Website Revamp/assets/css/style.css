@@ -627,31 +627,31 @@ section {
     .cv_banner_img::after {
         content: '';
         position: absolute;
-        width: 7px;
-        height: 7px;
+        width: 8px;
+        height: 8px;
         border-radius: 50%;
         background: rgba(255, 255, 255, 0.88);
         box-shadow:
             0px 0px 0 rgba(255, 255, 255, 0.88),
-            20px 0px 0 rgba(255, 255, 255, 0.88),
-            40px 0px 0 rgba(255, 255, 255, 0.88),
-            60px 0px 0 rgba(255, 255, 255, 0.88),
-            0px 20px 0 rgba(255, 255, 255, 0.88),
-            20px 20px 0 rgba(255, 255, 255, 0.88),
-            40px 20px 0 rgba(255, 255, 255, 0.88),
-            60px 20px 0 rgba(255, 255, 255, 0.88),
-            0px 40px 0 rgba(255, 255, 255, 0.88),
-            20px 40px 0 rgba(255, 255, 255, 0.88),
-            40px 40px 0 rgba(255, 255, 255, 0.88),
-            60px 40px 0 rgba(255, 255, 255, 0.88),
-            0px 60px 0 rgba(255, 255, 255, 0.88),
-            20px 60px 0 rgba(255, 255, 255, 0.88),
-            40px 60px 0 rgba(255, 255, 255, 0.88),
-            60px 60px 0 rgba(255, 255, 255, 0.88),
-            0px 80px 0 rgba(255, 255, 255, 0.88),
-            20px 80px 0 rgba(255, 255, 255, 0.88),
-            40px 80px 0 rgba(255, 255, 255, 0.88),
-            60px 80px 0 rgba(255, 255, 255, 0.88);
+            22px 0px 0 rgba(255, 255, 255, 0.88),
+            44px 0px 0 rgba(255, 255, 255, 0.88),
+            66px 0px 0 rgba(255, 255, 255, 0.88),
+            0px 22px 0 rgba(255, 255, 255, 0.88),
+            22px 22px 0 rgba(255, 255, 255, 0.88),
+            44px 22px 0 rgba(255, 255, 255, 0.88),
+            66px 22px 0 rgba(255, 255, 255, 0.88),
+            0px 44px 0 rgba(255, 255, 255, 0.88),
+            22px 44px 0 rgba(255, 255, 255, 0.88),
+            44px 44px 0 rgba(255, 255, 255, 0.88),
+            66px 44px 0 rgba(255, 255, 255, 0.88),
+            0px 66px 0 rgba(255, 255, 255, 0.88),
+            22px 66px 0 rgba(255, 255, 255, 0.88),
+            44px 66px 0 rgba(255, 255, 255, 0.88),
+            66px 66px 0 rgba(255, 255, 255, 0.88),
+            0px 88px 0 rgba(255, 255, 255, 0.88),
+            22px 88px 0 rgba(255, 255, 255, 0.88),
+            44px 88px 0 rgba(255, 255, 255, 0.88),
+            66px 88px 0 rgba(255, 255, 255, 0.88);
         left: calc(50% - 160px);
         top: 34%;
         pointer-events: none;
@@ -664,31 +664,31 @@ section {
     .cv_banner_img::after {
         content: '';
         position: absolute;
-        width: 7px;
-        height: 7px;
+        width: 8px;
+        height: 8px;
         border-radius: 50%;
         background: rgba(255, 255, 255, 0.88);
         box-shadow:
             0px 0px 0 rgba(255, 255, 255, 0.88),
-            20px 0px 0 rgba(255, 255, 255, 0.88),
-            40px 0px 0 rgba(255, 255, 255, 0.88),
-            60px 0px 0 rgba(255, 255, 255, 0.88),
-            0px 20px 0 rgba(255, 255, 255, 0.88),
-            20px 20px 0 rgba(255, 255, 255, 0.88),
-            40px 20px 0 rgba(255, 255, 255, 0.88),
-            60px 20px 0 rgba(255, 255, 255, 0.88),
-            0px 40px 0 rgba(255, 255, 255, 0.88),
-            20px 40px 0 rgba(255, 255, 255, 0.88),
-            40px 40px 0 rgba(255, 255, 255, 0.88),
-            60px 40px 0 rgba(255, 255, 255, 0.88),
-            0px 60px 0 rgba(255, 255, 255, 0.88),
-            20px 60px 0 rgba(255, 255, 255, 0.88),
-            40px 60px 0 rgba(255, 255, 255, 0.88),
-            60px 60px 0 rgba(255, 255, 255, 0.88),
-            0px 80px 0 rgba(255, 255, 255, 0.88),
-            20px 80px 0 rgba(255, 255, 255, 0.88),
-            40px 80px 0 rgba(255, 255, 255, 0.88),
-            60px 80px 0 rgba(255, 255, 255, 0.88);
+            22px 0px 0 rgba(255, 255, 255, 0.88),
+            44px 0px 0 rgba(255, 255, 255, 0.88),
+            66px 0px 0 rgba(255, 255, 255, 0.88),
+            0px 22px 0 rgba(255, 255, 255, 0.88),
+            22px 22px 0 rgba(255, 255, 255, 0.88),
+            44px 22px 0 rgba(255, 255, 255, 0.88),
+            66px 22px 0 rgba(255, 255, 255, 0.88),
+            0px 44px 0 rgba(255, 255, 255, 0.88),
+            22px 44px 0 rgba(255, 255, 255, 0.88),
+            44px 44px 0 rgba(255, 255, 255, 0.88),
+            66px 44px 0 rgba(255, 255, 255, 0.88),
+            0px 66px 0 rgba(255, 255, 255, 0.88),
+            22px 66px 0 rgba(255, 255, 255, 0.88),
+            44px 66px 0 rgba(255, 255, 255, 0.88),
+            66px 66px 0 rgba(255, 255, 255, 0.88),
+            0px 88px 0 rgba(255, 255, 255, 0.88),
+            22px 88px 0 rgba(255, 255, 255, 0.88),
+            44px 88px 0 rgba(255, 255, 255, 0.88),
+            66px 88px 0 rgba(255, 255, 255, 0.88);
         left: 200px;
         top: 34%;
         pointer-events: none;
