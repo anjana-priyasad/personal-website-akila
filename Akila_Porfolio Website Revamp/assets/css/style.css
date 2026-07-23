@@ -1256,6 +1256,7 @@ section {
 
 .cv_about_img {
     position: relative;
+    z-index: 1;
 }
 
 .cv_about_img .cv_about_exp {
@@ -1324,8 +1325,8 @@ section {
         inset 0 0 40px rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(28px);
     -webkit-backdrop-filter: blur(28px);
-    padding: 40px 90px;
-    margin: 20px 0 23px;
+    padding: 40px 90px 40px 130px;
+    margin: 20px 0 23px -40px;
 }
 
 .cv_about_box p {
